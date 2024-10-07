@@ -21,11 +21,11 @@ RTSPApp is a Flask-based application designed to overlay custom logos and text o
 # Requirements
 
 Ensure you have the following installed:
+<br />
 
-Python (>=3.7)
-Node.js (>=14.x)
-MongoDB (ensure MongoDB service is running)
-ffmpeg (for handling video streaming and overlay processing)
+- Python (>=3.7)
+- Node.js (>=14.x)
+- MongoDB (ensure MongoDB service is running)
 
 # Installation
 
@@ -109,7 +109,10 @@ The overlays and settings can be persisted via the backend API, which uses Mongo
 The backend provides a set of API endpoints for managing the overlay settings:
 
 - POST /api/overlays
+  <br />
   Description: Add a new overlay configuration.
+
+<br />
   Request Body:
 
 ```json
@@ -124,7 +127,9 @@ The backend provides a set of API endpoints for managing the overlay settings:
 Response: Returns the saved overlay object with its ID.
 
 - GET /api/overlays
+  <br />
   Description: Get all saved overlays.
+  <br />
   Response:
 
 ```json
@@ -140,8 +145,11 @@ Response: Returns the saved overlay object with its ID.
 ```
 
 - PUT /api/overlays/:id
+
   Description: Update an existing overlay configuration by ID.
+  <br />
   Request Body: Same as POST /api/overlays.
 
 - DELETE /api/overlays/:id
+  <br />
   Description: Delete an overlay by ID.
